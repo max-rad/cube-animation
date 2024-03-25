@@ -1,0 +1,49 @@
+extends ../components/base/layout
+
+block variables
+    - const title = "global"
+    - const wrapperMods = ""
+    - const hasHeader = true
+    - const headerMods = ""
+    - const hasFooter = false
+    - const footerMods = ""
+    - const currentUrl = "index.html"
+
+block main
+    main
+      +intro()
+      form(action="#" method="get")
+        +custom-select({
+          name: "select-example",
+          label: "Select-example",
+          placeholder: "Choose an option",
+          optionsList: [
+            {
+              value: "option-1",
+              text: "Option-1"
+            },
+            {
+              value: "option-2",
+              text: "Option-2"
+            },
+            {
+              value: "option-3",
+              text: "Option-3"
+            },
+            {
+              value: "option-4",
+              text: "Option-4"
+            },
+            {
+              value: "option-5",
+              text: "Option-5"
+            },
+            {
+              value: "option-6",
+              text: "Option-6"
+            }
+          ]
+        })
+        button(type="submit") Отправить
+
+block modals
