@@ -19,73 +19,18 @@
 </g></symbol></svg>
     </div>
     <div class="wrapper">
-      <header class="header" data-header>
-        <div class="container">
-          <div class="header__wrapper"><span class="header__logo">
-              <svg width="247" height="35" aria-hidden="true">
-                <use xlink:href="#logo"></use>
-              </svg></span>
-            <nav class="main-nav">
-              <button class="btn-reset main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-toggle-menu><span></span><span></span><span></span></button>
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link is-active" href="#">Бизнес</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Цены</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Оформить заказ</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
       <main>
-        <section class="intro">
-          <div class="intro__background">
-            <picture>
-              <source type="image/webp" srcset="img/content/intro-background.webp, img/content/intro-background@2x.webp 2x"><img src="img/content/intro-background.png" srcset="img/content/intro-background@2x.png 2x" width="1920" height="850" alt="background">
-            </picture>
-          </div>
-          <div class="container">
-            <div class="intro__wrapper">
-              <h1 class="intro__title"><span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span>
-              </h1>
-              <p class="intro__description">At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos</p>
-              <ul class="intro__list">
-                <li class="intro__item"><span>Totam rem aperiam eaque ipsa</span></li>
-                <li class="intro__item"><span>Sit voluptatem accusantium doloremque laudantium</span></li>
-                <li class="intro__item"><span>Sed ut perspiciatis, unde omnis iste natus error</span></li>
-              </ul>
-              <div class="intro__buttons">
-                <button class="btn intro__button" type="button">заказать
-                </button>
-                <button class="btn btn--white intro__button" type="button">подробнее
-                </button>
-              </div>
+        <section class="cube">
+          <div class="cube__wrapper" data-cube-wrapper>
+            <div class="cube__cube" data-cube></div>
+            <div class="cube__buttons">
+              <button class="btn cube__button" type="button" data-button-left>Left
+              </button>
+              <button class="btn cube__button" type="button" data-button-right>Right
+              </button>
             </div>
           </div>
         </section>
-        <form action="#" method="get">
-          <div class="custom-select" data-select data-select-name="select-example"><span class="custom-select__label">Select-example</span>
-            <button class="btn-reset custom-select__button" type="button" data-select-button aria-label=""><span class="custom-select__text">Choose an option</span><span class="custom-select__icon"></span></button>
-            <ul class="custom-select__list" role="listbox">
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-1" aria-selected="false" role="option">Option-1</li>
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-2" aria-selected="false" role="option">Option-2</li>
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-3" aria-selected="false" role="option">Option-3</li>
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-4" aria-selected="false" role="option">Option-4</li>
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-5" aria-selected="false" role="option">Option-5</li>
-              <li class="custom-select__item" tabindex="0" data-select-item data-select-value="option-6" aria-selected="false" role="option">Option-6</li>
-            </ul>
-            <select name="select-example" tabindex="-1">
-              <option value="">Choose an option</option>
-              <option value="option-1">Option-1</option>
-              <option value="option-2">Option-2</option>
-              <option value="option-3">Option-3</option>
-              <option value="option-4">Option-4</option>
-              <option value="option-5">Option-5</option>
-              <option value="option-6">Option-6</option>
-            </select>
-          </div>
-          <button type="submit">Отправить</button>
-        </form>
       </main>
     </div>
     <script src="js/vendor.min.js"></script>

@@ -1,0 +1,26 @@
+.cube {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+  }
+
+  &__cube {
+    width: 100px;
+    height: 100px;
+
+    background-color: red;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    margin: 100px auto 0;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

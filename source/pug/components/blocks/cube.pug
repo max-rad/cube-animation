@@ -1,0 +1,7 @@
+mixin cube()
+  section.cube
+    .cube__wrapper(data-cube-wrapper)
+      div.cube__cube(data-cube)
+      .cube__buttons
+        +btn({type: "button", text: 'Left'})(data-button-left).cube__button
+        +btn({type: "button", text: 'Right'})(data-button-right).cube__button
